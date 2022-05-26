@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  background-color: #003366;
+}
+header,
+ul {
+  list-style-type: square;
+  margin: 0;
+  overflow: hidden;
+  padding: 20px;
+}
+li {
+  padding: 20px;
+  margin-left: 40px;
+}
+
+header {
+  background-color: #ffcc0c;
+  color: #003366;
+  font-family: Arial;
+  font-weight: bold;
+  margin: 0;
+}
+
+main {
+  color: #ffcc0c;
+  font-family: Arial;
+  font-weight: bold;
+}

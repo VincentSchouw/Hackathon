@@ -1,0 +1,161 @@
+body {
+  margin: 0;
+}
+
+.parent {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 175px 1fr 80px;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+
+header,
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #003366;
+}
+
+li {
+  float: left;
+  border-right: 1px solid #ffcc0c;
+}
+
+li a {
+  display: block;
+  color: #ffcc0c;
+  text-align: center;
+  padding: 14px 15px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #ffcc0c;
+  color: #003366;
+}
+
+.active {
+  background-color: Grey;
+  color: #ffcc0c;
+}
+main,
+footer,
+header {
+  background-color: #ffcc0c;
+  grid-area: header;
+  color: #003366;
+  text-align: center;
+  font-family: Arial;
+  font-weight: bold;
+}
+
+main {
+  background-color: #003366;
+  color: #ffcc0c;
+  grid-area: main;
+  padding-top: 15px;
+}
+
+footer {
+  background-color: #ffcc0c;
+  color: grey;
+  grid-area: footer;
+}
+
+@media (min-width: 768px) {
+  .parent {
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 1fr 200px;
+    grid-template-areas:
+      "header main"
+      "header footer";
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .parent {
+    grid-template-columns: 400px 1fr;
+    grid-template-rows: 1fr 80px;
+    grid-template-areas:
+      "header main"
+      "header footer";
+  }
+}
+.item1 {
+  grid-area: para1;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.item2 {
+  grid-area: img1;
+  text-align: right;
+}
+.item3 {
+  grid-area: para2;
+  text-align: left;
+}
+.item4 {
+  grid-area: img2;
+  text-align: left;
+}
+.item5 {
+  grid-area: para3;
+  text-align: right;
+}
+.item6 {
+  grid-area: img3;
+  text-align: right;
+}
+.item7 {
+  grid-area: para4;
+  text-align: left;
+}
+.item8 {
+  grid-area: img4;
+  text-align: left;
+}
+.item9 {
+  grid-area: para5;
+  text-align: right;
+}
+.item10 {
+  grid-area: img5;
+  text-align: right;
+}
+.item11 {
+  grid-area: para6;
+  text-align: left;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "para1 para1"
+    "img1 para2"
+    "para3 img2"
+    "img3 para4"
+    "para5 img4"
+    "img5 para6";
+  gap: 10px;
+  padding: 10px;
+  align-items: center;
+}
+
+.flex-container {
+  margin: auto;
+  padding: 25px;
+  display: flex;
+  width: 400px;
+  flex-direction: column;
+}
+.flex-item {
+  border: 3px solid #ffcc0c;
+  padding: 10px;
+  margin: 7px;
+}

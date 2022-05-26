@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles.css" rel="stylesheet" />
+    <title>VAN DENDEREN : PRODUCTEN</title>
+  </head>
+
+  <body>
+    <div class="parent">
+      <header>
+        <h1>VAN DENDEREN ZAND & GRIND</h1>
+        <h2>Sas van Gent - Zelzate - Brugge</h2>
+        <ul>
+          <li><a href="Index.html">Home</a></li>
+          <li><a href="Producten.html">Producten</a></li>
+          <li><a href="Info.html">Info</a></li>
+          <li><a href="Contact.html" class="active">Contact</a></li>
+        </ul>
+      </header>
+      <main>
+        <h2>
+          Voor al uw vragen of voor bestellingen, gelieve onderstaand formulier
+          te gebruiken:
+        </h2>
+        <form
+          action="mailto:admin@vandenderen.be?subject=Bericht via webformulier"
+          method="post"
+          enctype="text/plain"
+        >
+          <label for="fname">Voornaam:</label><br />
+          <input type="text" id="fname" name="Voornaam" /><br /><br />
+          <label for="lname">Achternaam:</label><br />
+          <input type="text" id="lname" name="Achternaam" /><br /><br />
+          <label for="email">Email:</label><br />
+          <input type="email" id="email" name="Emailadres" /><br /><br />
+          <label for="phone"
+            >Telefoonnummer: <br />(Format: 0123/45.67.89)</label
+          ><br />
+          <input
+            type="tel"
+            id="phone"
+            name="Telefoonnummer"
+            pattern="[0-9]{4}/[0-9]{2}.[0-9]{2}.[0-9]{2}"
+          /><br /><br />
+          <label>Uw vraag of bestelling betreft:</label><br />
+          <input type="checkbox" name="Domein" value="zand" />
+          <label>Zand</label><br />
+          <input type="checkbox" name="Domein" value="grind" />
+          <label>Grind</label><br />
+          <input type="checkbox" name="Domein" value="steenslag" />
+          <label>Steenslag</label><br />
+          <input type="checkbox" name="Domein" value="iets anders" />
+          <label>Iets anders</label><br /><br />
+          <label>Uw bericht: </label>
+          <textarea rows="7" cols="50" name="Bericht"></textarea><br /><br />
+          <input type="submit" value="Verzend bericht" />
+        </form>
+      </main>
+      <footer>
+        <br />
+        <h2>Voor bestellingen bel: 0032 475 90 55 32</h2>
+      </footer>
+    </div>
+  </body>
+</html>
